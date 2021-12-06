@@ -1,14 +1,25 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
-import Progress from './components/Progress';
-import Form from './components/Form';
+import Main from './components/Main';
+import Categories from './components/Categories';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Progress />
-      <Form />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <Main />
+            </Route>
+            <Route path="/categories">
+              <Categories />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 }
 
