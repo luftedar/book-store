@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Form() {
+const Form = function () {
   return (
     <div className="form-area">
       <h3>ADD NEW BOOK</h3>
@@ -15,6 +15,6 @@ function Form() {
       </form>
     </div>
   );
-}
+};
 
 export default Form;

@@ -2,13 +2,13 @@ import React from 'react';
 import Progress from './Progress';
 import Form from './Form';
 
-function Main() {
+const Main = function () {
   return (
     <div>
       <Progress />
       <Form />
     </div>
   );
-}
+};
 
 export default Main;

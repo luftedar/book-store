@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Categories() {
+const Categories = function () {
   return (
     <div>
       <p>Under construction</p>
     </div>
   );
-}
+};
 
 export default Categories;

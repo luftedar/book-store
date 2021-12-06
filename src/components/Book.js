@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Book() {
+const Book = function () {
   return (
     <div className="book-item">
       <div className="book-desc">
@@ -21,6 +21,6 @@ function Book() {
       </div>
     </div>
   );
-}
+};
 
 export default Book;

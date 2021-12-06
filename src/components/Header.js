@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header() {
+const Header = function () {
   return (
     <div className="nav">
       <h1>Bookstore CMS</h1>
@@ -10,6 +10,6 @@ function Header() {
       </div>
     </div>
   );
-}
+};
 
 export default Header;

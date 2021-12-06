@@ -1,11 +1,11 @@
 import Book from './Book';
 
-function Progress() {
+const Progress = function () {
   return (
     <div className="progress">
       <Book />
     </div>
   );
-}
+};
 
 export default Progress;
