@@ -1,12 +1,14 @@
 import React from 'react';
 
-const Book = function () {
+/* eslint-disable react/prop-types */
+const Book = function (props) {
+  const { title, author } = props;
   return (
     <div className="book-item">
       <div className="book-desc">
         <h5>Genre</h5>
-        <h2>Title</h2>
-        <p>Author</p>
+        <h2>{title}</h2>
+        <p>{author}</p>
         <div>
           <a href="http://localhost:3000/">Comments</a>
           <a href="http://localhost:3000/">Remove</a>

@@ -3,7 +3,7 @@ import Book from './Book';
 const Progress = function () {
   return (
     <div className="progress">
-      <Book />
+      <Book title="Dune" author="Frank Herbert" />
     </div>
   );
 };
