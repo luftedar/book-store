@@ -2,7 +2,7 @@ import React from 'react';
 
 function Form() {
   return (
-    <div>
+    <div className="form-area">
       <h3>ADD NEW BOOK</h3>
       <form>
         <input type="text" placeholder="Book title" />
