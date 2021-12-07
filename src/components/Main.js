@@ -24,8 +24,8 @@ const Progress = function () {
       <div className="form-area">
         <h3>ADD NEW BOOK</h3>
         <form>
-          <input type="text" placeholder="Book Title" />
-          <input type="text" placeholder="Book Author" />
+          <input type="text" placeholder="Book Title" id="b-title" />
+          <input type="text" placeholder="Book Author" id="b-author" />
           <button type="button">ADD BOOK</button>
         </form>
       </div>
