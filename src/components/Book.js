@@ -5,7 +5,6 @@ import { removeBook } from '../redux/books/books';
 const Book = function (props) {
   const { books } = props;
   const dispatch = useDispatch();
-  console.log(books);
   return (
     <li key={books.id}>
       <h2>
