@@ -8,12 +8,12 @@ const Book = function (props) {
   console.log(books);
   return (
     <li key={books.id}>
-      <span>
-        {` ${books.title} `}
-      </span>
-      <span>
-        {`by ${books.author}`}
-      </span>
+      <h2>
+        {`Title: ${books.title} `}
+      </h2>
+      <h3>
+        {`Author: ${books.author}`}
+      </h3>
       <button type="button" onClick={() => dispatch(removeBook(books.id))}>
         Remove Book
       </button>

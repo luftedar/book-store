@@ -31,3 +31,7 @@ button {
   font-size: 16px;
   color: white;
 }
+
+ul li {
+  list-style: none;
+}
