@@ -24,12 +24,8 @@ const Progress = function () {
       <div className="form-area">
         <h3>ADD NEW BOOK</h3>
         <form>
-          <input type="text" placeholder="Book title" />
-          <select name="Category">
-            <option>Category</option>
-            <option value="first">First</option>
-            <option value="second">Second</option>
-          </select>
+          <input type="text" placeholder="Book Title" />
+          <input type="text" placeholder="Book Author" />
           <button type="button">ADD BOOK</button>
         </form>
       </div>
