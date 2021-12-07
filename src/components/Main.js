@@ -7,12 +7,12 @@ const Progress = function () {
   const dispatch = useDispatch();
   const submitBookToStore = (e) => {
     e.preventDefault();
-    const titleValue = document.querySelector('#b-title');
-    const authorValue = document.querySelector('#b-author');
+    const titleValue = e.target.querySelector('#b-title');
+    const authorValue = e.target.querySelector('#b-author');
     const newBook = {
       id: uuidv4(),
-      title: titleValue,
-      author: authorValue,
+      title: titleValue.value,
+      author: authorValue.value,
     };
     dispatch(addBook(newBook));
   };
@@ -26,7 +26,7 @@ const Progress = function () {
             {books.map((element) => (
               <Book
                 key={element.id}
-                book={books}
+                books={element}
               />
             ))}
           </ul>
