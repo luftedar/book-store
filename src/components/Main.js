@@ -21,6 +21,8 @@ function Progress() {
       titleValue.value = '';
       categoryValue.value = '';
       dispatch(addBook(newBook));
+    } else {
+      console.log('Invalid Value');
     }
   };
   const books = useSelector((state) => state.booksReducer);
@@ -37,11 +39,6 @@ function Progress() {
               />
             ))}
           </ul>
-          <div>
-            <a href="http://localhost:3000/">Comments</a>
-            <a href="http://localhost:3000/">Remove</a>
-            <a href="http://localhost:3000/">Edit</a>
-          </div>
         </div>
         <div className="progress" />
         <div className="summary">
