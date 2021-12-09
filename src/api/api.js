@@ -25,7 +25,7 @@ export const removeBookFromApi = async (id) => {
       item_id: id,
     }),
   });
-  return bookWillRemove === 'The Book Was Deleted';
+  return bookWillRemove === 'The Book Deleted';
 };
 
 export const getAllBooksFromApi = async () => {

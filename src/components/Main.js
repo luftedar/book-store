@@ -21,8 +21,6 @@ function Progress() {
       titleValue.value = '';
       categoryValue.value = '';
       dispatch(addBook(newBook));
-    } else {
-      console.log('Invalid Value');
     }
   };
   const books = useSelector((state) => state.booksReducer);
