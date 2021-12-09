@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Categories from './components/Categories';
 
-const App = function () {
+function App() {
   return (
     <Router>
       <div>
@@ -21,6 +21,6 @@ const App = function () {
       </div>
     </Router>
   );
-};
+}
 
 export default App;
