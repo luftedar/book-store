@@ -1,59 +1,57 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Book Store
 
-> One paragraph statement about the project.
+> Project for storing information about the books. Single page application made by using React Redux and API calls.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
-
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- React, Redux
+- HTML&CSS, JavaScript, NPM
+- React and Redux Web Dev Tools
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
+Clone the project by using terminal:
+
+```
+git clone https://github.com/luftedar/book-store.git
+```
+
+cd into the directory:
+
+```
+cd book-store
+```
+
+install node modules:
+
+```
+npm install
+```
+
+start live server:
+
+```
+npm start
+```
 ### Prerequisites
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Node.
+- Code Editor.
+- Web Browser.
 
 ## Authors
 
-👤 **Author1**
+👤 **Orçun Uğur**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/luftedar)
+- Twitter: [@twitterhandle](https://twitter.com/OrcunUgur2)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/or%C3%A7un-u%C4%9Fur-089148181/)
 
 ## 🤝 Contributing
 
@@ -67,9 +65,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- This project built in Microverse's second module's third week.
 
 ## 📝 License
 
