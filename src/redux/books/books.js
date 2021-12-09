@@ -22,8 +22,14 @@ export const removeBook = (id) => async (dispatch) => {
 };
 // eslint-disable-next-line
 export const fetchAllBooks = () => async (dispatch) => {
-  const payload = await apiCalls.getAllBooksFromApi();
-  console.log(payload);
+  const apiData = await apiCalls.getAllBooksFromApi();
+  const payload = Object.entries(apiData).map(([key, value]) => {
+    const [books] = value;
+    return {
+      item_id: key,
+      ...books,
+    };
+  });
   dispatch({
     type: FETCH_BOOKS,
     payload,
@@ -37,7 +43,7 @@ const booksReducer = (state = initialState, action) => {
     case REMOVE_BOOK:
       return state.filter((book) => book.item_id !== action.payload);
     case FETCH_BOOKS:
-      return [...state, ...action.payload];
+      return [...state, action.payload];
     default:
       return state;
   }
