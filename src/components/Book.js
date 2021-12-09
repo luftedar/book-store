@@ -6,14 +6,14 @@ const Book = function (props) {
   const { books } = props;
   const dispatch = useDispatch();
   return (
-    <li key={books.id}>
+    <li key={books.item_id}>
       <h2>
         {`Title: ${books.title} `}
       </h2>
       <h3>
         {`Category: ${books.category}`}
       </h3>
-      <button type="button" onClick={() => dispatch(removeBook(books.id))}>
+      <button type="button" onClick={() => dispatch(removeBook(books.item_id))}>
         Remove Book
       </button>
     </li>

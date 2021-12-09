@@ -16,7 +16,7 @@ export const addBookToApi = async (book) => {
 };
 
 export const removeBookFromApi = async (id) => {
-  const bookWillRemove = await fetch(URL, {
+  const bookWillRemove = await fetch(`${URL}/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-type': 'application/json',

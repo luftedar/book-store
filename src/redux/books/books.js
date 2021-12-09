@@ -22,11 +22,11 @@ export const removeBook = (id) => async (dispatch) => {
 };
 // eslint-disable-next-line
 export const fetchAllBooks = () => async (dispatch) => {
-  const apiData = await apiCalls.getAllBooksFromApi();
-  console.log(apiData);
+  const payload = await apiCalls.getAllBooksFromApi();
+  console.log(payload);
   dispatch({
     type: FETCH_BOOKS,
-    ...apiData,
+    payload,
   });
 };
 // eslint-disable-next-line
@@ -35,7 +35,7 @@ const booksReducer = (state = initialState, action) => {
     case ADD_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.payload);
+      return state.filter((book) => book.item_id !== action.payload);
     case FETCH_BOOKS:
       return [...state, ...action.payload];
     default:

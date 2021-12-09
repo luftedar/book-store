@@ -46,7 +46,7 @@ const Progress = function () {
         <h3>ADD NEW BOOK</h3>
         <form action="submit" onSubmit={(e) => { submitBookToStore(e); }}>
           <input type="text" placeholder="Book Title" id="b-title" />
-          <input type="text" placeholder="Book category" id="b-category" />
+          <input type="text" placeholder="Book Category" id="b-category" />
           <button type="submit">ADD BOOK</button>
         </form>
       </div>
