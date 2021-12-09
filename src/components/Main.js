@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addBook, fetchAllBooks } from '../redux/books/books';
 import Book from './Book';
 
-const Progress = function () {
+function Progress() {
   const dispatch = useDispatch();
   const submitBookToStore = (e) => {
     e.preventDefault();
@@ -54,6 +54,6 @@ const Progress = function () {
       </div>
     </div>
   );
-};
+}
 
 export default Progress;
