@@ -24,10 +24,10 @@ function Progress() {
       <div className="book-item">
         <div className="book-desc">
           <ul>
-            {books.map((element) => (
+            {books.map((book) => (
               <Book
-                key={element.id}
-                books={element}
+                key={book.id}
+                book={book}
               />
             ))}
           </ul>
