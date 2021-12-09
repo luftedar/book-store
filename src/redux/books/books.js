@@ -20,7 +20,7 @@ export const removeBook = (id) => async (dispatch) => {
     payload: id,
   });
 };
-// eslint-disable-next-line
+
 export const fetchAllBooks = () => async (dispatch) => {
   const apiData = await apiCalls.getAllBooksFromApi();
   const payload = Object.entries(apiData).map(([key, value]) => {
@@ -35,7 +35,7 @@ export const fetchAllBooks = () => async (dispatch) => {
     payload,
   });
 };
-// eslint-disable-next-line
+
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
