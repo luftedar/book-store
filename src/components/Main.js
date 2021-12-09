@@ -18,9 +18,7 @@ const Progress = function () {
     dispatch(addBook(newBook));
   };
   const books = useSelector((state) => state.booksReducer);
-  useEffect(() => {
-    dispatch(fetchAllBooks());
-  }, [dispatch]);
+  useEffect(() => { dispatch(fetchAllBooks()); }, [dispatch]);
   return (
     <div className="progress">
       <div className="book-item">
