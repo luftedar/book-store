@@ -2,13 +2,16 @@ import * as apiCalls from '../../api/api';
 
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
-
+const FETCH_BOOKS = 'bookStore/books/FETCH_BOOKS';
 const initialState = [];
 
-export const addBook = (payload) => ({
-  type: ADD_BOOK,
-  payload,
-});
+export const addBook = (payload) => async (dispatch) => {
+  await apiCalls.addBookToApi(payload);
+  dispatch({
+    type: ADD_BOOK,
+    payload,
+  });
+};
 
 export const removeBook = (payload) => ({
   type: REMOVE_BOOK,
