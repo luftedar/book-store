@@ -11,10 +11,12 @@ function Progress() {
     const titleValue = e.target.querySelector('#b-title');
     const categoryValue = e.target.querySelector('#b-category');
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title: titleValue.value,
       category: categoryValue.value,
     };
+    titleValue.value = '';
+    categoryValue.value = '';
     dispatch(addBook(newBook));
   };
   const books = useSelector((state) => state.booksReducer);
@@ -26,7 +28,7 @@ function Progress() {
           <ul>
             {books.map((book) => (
               <Book
-                key={book.id}
+                key={book.item_id}
                 book={book}
               />
             ))}
