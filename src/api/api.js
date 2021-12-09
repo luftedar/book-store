@@ -29,7 +29,8 @@ export const removeBookFromApi = async (id) => {
 };
 
 export const getAllBooksFromApi = async () => {
-  const books = await fetch(URL).json(); // BURAYA DİKKAT
+  const req = await fetch(URL);
+  const books = await req.json();
   return books;
 };
 
