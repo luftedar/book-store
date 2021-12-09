@@ -10,14 +10,18 @@ function Progress() {
     e.preventDefault();
     const titleValue = e.target.querySelector('#b-title');
     const categoryValue = e.target.querySelector('#b-category');
-    const newBook = {
-      item_id: uuidv4(),
-      title: titleValue.value,
-      category: categoryValue.value,
-    };
-    titleValue.value = '';
-    categoryValue.value = '';
-    dispatch(addBook(newBook));
+    if (titleValue.value.length !== 0 && titleValue.value.split(' ')[0].length !== 0
+    && categoryValue.value.length !== 0 && categoryValue.value.split(' ')[0].length !== 0
+    ) {
+      const newBook = {
+        item_id: uuidv4(),
+        title: titleValue.value,
+        category: categoryValue.value,
+      };
+      titleValue.value = '';
+      categoryValue.value = '';
+      dispatch(addBook(newBook));
+    }
   };
   const books = useSelector((state) => state.booksReducer);
   useEffect(() => { dispatch(fetchAllBooks()); }, [dispatch]);

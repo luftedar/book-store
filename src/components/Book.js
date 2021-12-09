@@ -7,7 +7,7 @@ function Book({ book }) {
   return (
     <li key={book.item_id}>
       <h2>
-        {`Title: ${book.title} `}
+        {`Title: ${book.title}`}
       </h2>
       <h3>
         {`Category: ${book.category}`}
