@@ -1,6 +1,7 @@
+import { useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch, useSelector } from 'react-redux';
-import { addBook } from '../redux/books/books';
+import { addBook, fetchAllBooks } from '../redux/books/books';
 import Book from './Book';
 
 const Progress = function () {
@@ -17,6 +18,9 @@ const Progress = function () {
     dispatch(addBook(newBook));
   };
   const books = useSelector((state) => state.booksReducer);
+  useEffect(() => {
+    dispatch(fetchAllBooks());
+  }, [dispatch]);
   return (
     <div className="progress">
       <div className="book-item">
