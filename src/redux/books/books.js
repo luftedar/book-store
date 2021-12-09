@@ -13,10 +13,13 @@ export const addBook = (payload) => async (dispatch) => {
   });
 };
 
-export const removeBook = (payload) => ({
-  type: REMOVE_BOOK,
-  payload,
-});
+export const removeBook = (id) => async (dispatch) => {
+  await apiCalls.removeBookFromApi(id);
+  dispatch({
+    type: REMOVE_BOOK,
+    payload: id,
+  });
+};
 // eslint-disable-next-line
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
