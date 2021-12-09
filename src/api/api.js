@@ -7,7 +7,7 @@ export const addBookToApi = async (book) => {
       'Content-type': 'application/json',
     },
     body: JSON.stringify({
-      item_id: book.id,
+      item_id: book.item_id,
       title: book.title,
       category: book.category,
     }),
