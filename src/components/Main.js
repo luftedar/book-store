@@ -8,11 +8,11 @@ const Progress = function () {
   const submitBookToStore = (e) => {
     e.preventDefault();
     const titleValue = e.target.querySelector('#b-title');
-    const authorValue = e.target.querySelector('#b-author');
+    const categoryValue = e.target.querySelector('#b-category');
     const newBook = {
       id: uuidv4(),
       title: titleValue.value,
-      author: authorValue.value,
+      category: categoryValue.value,
     };
     dispatch(addBook(newBook));
   };
@@ -46,7 +46,7 @@ const Progress = function () {
         <h3>ADD NEW BOOK</h3>
         <form action="submit" onSubmit={(e) => { submitBookToStore(e); }}>
           <input type="text" placeholder="Book Title" id="b-title" />
-          <input type="text" placeholder="Book Author" id="b-author" />
+          <input type="text" placeholder="Book category" id="b-category" />
           <button type="submit">ADD BOOK</button>
         </form>
       </div>

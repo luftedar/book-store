@@ -11,7 +11,7 @@ const Book = function (props) {
         {`Title: ${books.title} `}
       </h2>
       <h3>
-        {`Author: ${books.author}`}
+        {`Category: ${books.category}`}
       </h3>
       <button type="button" onClick={() => dispatch(removeBook(books.id))}>
         Remove Book
