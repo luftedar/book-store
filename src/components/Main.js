@@ -38,7 +38,6 @@ function Progress() {
             ))}
           </ul>
         </div>
-        <div className="progress" />
         <div className="summary">
           <h3>CURRENT CHAPTER</h3>
           <h5>Chapter 17</h5>
