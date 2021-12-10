@@ -37,7 +37,7 @@ function Progress() {
       </ul>
       <div className="form-area">
         <h3>ADD NEW BOOK</h3>
-        <form action="submit" onSubmit={(e) => { submitBookToStore(e); }}>
+        <form className="submit-area" action="submit" onSubmit={(e) => { submitBookToStore(e); }}>
           <input type="text" placeholder="Book Title" id="b-title" />
           <input type="text" placeholder="Book Category" id="b-category" />
           <button type="submit">ADD BOOK</button>
