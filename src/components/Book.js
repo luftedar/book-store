@@ -12,12 +12,12 @@ function Book({ book }) {
       <h3>
         {`Category: ${book.category}`}
       </h3>
-      <div>
-        <a href="http://localhost:3000/">Comments</a>
-        <button type="button" onClick={() => dispatch(removeBook(book.item_id))}>
+      <div className="book-button-container">
+        <button className="book-button" type="button">Comments</button>
+        <button className="book-button" type="button" onClick={() => dispatch(removeBook(book.item_id))}>
           Remove Book
         </button>
-        <a href="http://localhost:3000/">Edit</a>
+        <button className="book-button" type="button">Edit</button>
       </div>
     </li>
   );

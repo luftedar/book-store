@@ -3,9 +3,19 @@
   box-sizing: border-box;
 }
 
+.progress {
+  background-color: #dbdbdb;
+  padding: 20px 50px;
+}
+
 .nav {
+  padding: 20px 50px;
   display: flex;
   align-items: center;
+}
+
+.nav h1 {
+  color: rgb(62, 62, 245);
 }
 
 .nav-links > * {
@@ -13,11 +23,21 @@
   text-decoration: none;
 }
 
+.nav-links > :nth-child(1) {
+  color: black
+}
+
+.nav-links > :nth-child(2) {
+  color: #7c7c7c;
+}
+
 .book-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 50px;
+  border: 1px solid #000;
+  padding: 15px;
+  background-color: white;
 }
 
 .book-desc div > * {
@@ -26,7 +46,7 @@
 }
 
 button {
-  background-color: blue;
+  background-color: rgb(62, 62, 245);
   padding: 5px 20px;
   font-size: 16px;
   color: white;
@@ -34,4 +54,23 @@ button {
 
 ul li {
   list-style: none;
+}
+
+.book-button-container {
+  margin: 20px 0;
+}
+
+.book-button {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(62, 62, 245);
+  border: none;
+  font-size: 14px;
+  padding: 0 15px 0 0;
+}
+
+.book-button-container > :nth-child(1),
+.book-button-container > :nth-child(2) {
+  border-right: 1px solid #000;
+  margin-right: 15px;
 }
