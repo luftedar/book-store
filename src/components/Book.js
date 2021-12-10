@@ -7,12 +7,15 @@ function Book({ book }) {
   return (
     <li className="book-item" key={book.item_id}>
       <div className="book-description">
-        <h2>
-          {`Title: ${book.title}`}
-        </h2>
         <h3>
-          {`Category: ${book.category}`}
+          { book.category}
         </h3>
+        <h2>
+          {book.title}
+        </h2>
+        <p>
+          Suzanne Collins
+        </p>
         <div className="book-button-container">
           <button className="book-button" type="button">Comments</button>
           <button className="book-button" type="button" onClick={() => dispatch(removeBook(book.item_id))}>
@@ -22,8 +25,10 @@ function Book({ book }) {
         </div>
       </div>
       <div className="summary">
-        <h3>CURRENT CHAPTER</h3>
-        <h5>Chapter 17</h5>
+        <div className="summary-header">
+          <h3>CURRENT CHAPTER</h3>
+          <h5>Chapter 17</h5>
+        </div>
         <button type="button">Update Progress</button>
       </div>
     </li>
