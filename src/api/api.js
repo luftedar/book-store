@@ -12,7 +12,7 @@ export const addBookToApi = async (book) => {
       category: book.category,
     }),
   });
-  return newBook.status === 201;
+  return newBook;
 };
 
 export const removeBookFromApi = async (id) => {
@@ -25,7 +25,7 @@ export const removeBookFromApi = async (id) => {
       item_id: id,
     }),
   });
-  return bookWillRemove === 'The Book Deleted';
+  return bookWillRemove;
 };
 
 export const getAllBooksFromApi = async () => {
