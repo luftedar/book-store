@@ -27,23 +27,14 @@ function Progress() {
   useEffect(() => { dispatch(fetchAllBooks()); }, [dispatch]);
   return (
     <div className="progress">
-      <div className="book-item">
-        <div className="book-desc">
-          <ul>
-            {books.map((book) => (
-              <Book
-                key={book.item_id}
-                book={book}
-              />
-            ))}
-          </ul>
-        </div>
-        <div className="summary">
-          <h3>CURRENT CHAPTER</h3>
-          <h5>Chapter 17</h5>
-          <button type="button">Update Progress</button>
-        </div>
-      </div>
+      <ul>
+        {books.map((book) => (
+          <Book
+            key={book.item_id}
+            book={book}
+          />
+        ))}
+      </ul>
       <div className="form-area">
         <h3>ADD NEW BOOK</h3>
         <form action="submit" onSubmit={(e) => { submitBookToStore(e); }}>
