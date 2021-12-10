@@ -70,24 +70,19 @@ ul li {
   margin: 20px 0;
 }
 
-.book-button {
-  cursor: pointer;
-  background-color: rgb(252, 252, 252);
-  color: rgb(62, 62, 245);
-  border: none;
-  font-size: 14px;
-  padding: 0 15px 0 0;
-}
-
 .book-button-container > :nth-child(1),
 .book-button-container > :nth-child(2) {
   border-right: solid rgba(116, 116, 116, 0.377);
   margin-right: 15px;
 }
 
+.book-description h3,
+.form-area h3 {
+  color: #7c7c7c;
+}
+
 .book-description h3 {
   font-size: 14px;
-  color: #7c7c7c;
 }
 
 .book-description h2 {
@@ -134,4 +129,14 @@ ul li {
   margin-right: 35px;
   border: 1px solid rgba(116, 116, 116, 0.377);
   font-size: 15px;
+}
+
+.book-button {
+  cursor: pointer;
+  background-color: rgb(252, 252, 252);
+  color: rgb(62, 62, 245);
+  border: none;
+  font-size: 14px;
+  padding: 0 15px 0 0;
+  font-weight: normal;
 }
