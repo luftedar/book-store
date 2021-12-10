@@ -3,15 +3,16 @@
   box-sizing: border-box;
 }
 
-.progress {
-  background-color: rgba(245, 244, 244, 0.877);
-  padding: 50px 50px;
+body {
+  background-color: rgba(247, 245, 245, 0.74);
 }
 
 .nav {
+  background-color: white;
   padding: 20px 90px;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgba(116, 116, 116, 0.377);
 }
 
 .nav h1 {
@@ -35,10 +36,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #000;
+  border: 1px solid rgba(116, 116, 116, 0.377);
   padding: 15px 40px 10px 40px;
   background-color: white;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 
 .book-desc div > * {
@@ -51,6 +52,12 @@ button {
   padding: 5px 20px;
   font-size: 16px;
   color: white;
+}
+
+ul {
+  padding: 0;
+  margin: 50px;
+  border-bottom: 1px solid rgba(116, 116, 116, 0.377);
 }
 
 ul li {
@@ -72,7 +79,7 @@ ul li {
 
 .book-button-container > :nth-child(1),
 .book-button-container > :nth-child(2) {
-  border-right: 1px solid #000;
+  border-right: solid rgba(116, 116, 116, 0.377);
   margin-right: 15px;
 }
 
@@ -91,10 +98,10 @@ ul li {
 }
 
 .summary-header {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .summary {
-  border-left: 1px solid #7c7c7c;
+  border-left: 1px solid rgba(116, 116, 116, 0.377);
   padding: 0 10px 0 75px; 
 }
