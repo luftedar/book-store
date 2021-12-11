@@ -6,6 +6,10 @@
 
 ![screenshot](./app_screenshot.png)
 
+## Live Demo
+
+[Live](https://luftedar-bookstore.netlify.app/)
+
 ## Built With
 
 - React, Redux
