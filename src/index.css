@@ -31,7 +31,7 @@ body {
 }
 
 .nav-links > :nth-child(1) {
-  color: black
+  color: black;
 }
 
 .nav-links > :nth-child(2) {
@@ -47,6 +47,11 @@ body {
   background-color: #fff;
   margin: 25px 0;
   border-radius: 4px;
+}
+
+.submit-area > * {
+  flex: 1;
+  padding: 10px;
 }
 
 .book-desc div > * {
@@ -118,7 +123,7 @@ ul li {
 
 .summary {
   border-left: 1px solid #e8e8e8;
-  padding: 0 10px 0 75px; 
+  padding: 0 10px 0 75px;
 }
 
 .form-area {
@@ -131,11 +136,6 @@ ul li {
 
 .submit-area {
   display: flex;
-}
-
-.submit-area > * {
-  flex: 1;
-  padding: 10px;
 }
 
 .submit-area > :nth-child(1) {
@@ -180,6 +180,17 @@ ul li {
   display: flex;
 }
 
+.mask .fill {
+  clip: rect(0, 2.15rem, 4.3rem, 0);
+  background-color: #227ded;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
 .circle-wrap .circle .mask,
 .circle-wrap .circle .fill {
   width: 4.3rem;
@@ -189,7 +200,7 @@ ul li {
 }
 
 .circle-wrap .circle .mask {
-  clip: rect(0px, 4.3rem, 4.3rem, 2.15rem);
+  clip: rect(0, 4.3rem, 4.3rem, 2.15rem);
 }
 
 .circle-wrap .inside-circle {
@@ -212,21 +223,11 @@ ul li {
   margin-right: 50px;
 }
 
-.mask .fill {
-  clip: rect(0px, 2.15rem, 4.3rem, 0px);
-  background-color: #227ded;
-}
-
-.mask.full,
-.circle .fill {
-  animation: fill ease-in-out 3s;
-  transform: rotate(135deg);
-}
-
-@keyframes fill{
+@keyframes fill {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(135deg);
   }
