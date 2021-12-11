@@ -12,8 +12,9 @@
 
 ## Built With
 
+- HTML&CSS, JavaScript
 - React, Redux
-- HTML&CSS, JavaScript, NPM
+- NPM
 - React and Redux Web Dev Tools
 
 ## Getting Started
