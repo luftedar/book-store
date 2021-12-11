@@ -24,12 +24,28 @@ function Book({ book }) {
           <button className="book-button" type="button">Edit</button>
         </div>
       </div>
-      <div className="summary">
-        <div className="summary-header">
-          <h3>CURRENT CHAPTER</h3>
-          <h5>Chapter 17</h5>
+      <div className="book-item-right">
+        <div className="progress-area">
+          <div className="circle-wrap">
+            <div className="circle">
+              <div className="mask full">
+                <div className="fill" />
+              </div>
+              <div className="mask half">
+                <div className="fill" />
+              </div>
+              <div className="inside-circle" />
+            </div>
+          </div>
+          <div className="percentage">75%</div>
         </div>
-        <button type="button">Update Progress</button>
+        <div className="summary">
+          <div className="summary-header">
+            <h3>CURRENT CHAPTER</h3>
+            <h5>Chapter 17</h5>
+          </div>
+          <button type="button">Update Progress</button>
+        </div>
       </div>
     </li>
   );

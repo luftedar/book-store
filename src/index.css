@@ -1,22 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&family=Roboto+Slab:wght@300;400;500;600;900&family=Source+Code+Pro:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
 body {
-  background-color: rgba(245, 245, 245, 0.74);
+  background-color: #fafafa;
 }
 
 .nav {
-  background-color: rgb(252, 252, 252);
+  background-color: #fff;
   padding: 20px 90px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(116, 116, 116, 0.377);
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .nav h1 {
-  color: rgb(62, 62, 245);
+  color: #4386bf;
 }
 
 .nav-links > * {
@@ -36,10 +42,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid rgba(116, 116, 116, 0.377);
+  border: 1px solid #e8e8e8;
   padding: 15px 40px 10px 40px;
-  background-color: rgb(252, 252, 252);
+  background-color: #fff;
   margin: 25px 0;
+  border-radius: 4px;
 }
 
 .book-desc div > * {
@@ -48,12 +55,13 @@ body {
 }
 
 button {
-  background-color: rgb(72, 72, 235);
+  background-color: #0290ff;
   padding: 5px 20px;
   font-size: 16px;
   font-weight: lighter;
-  color: white;
+  color: #fff;
   border: none;
+  border-radius: 3px;
 }
 
 ul {
@@ -72,26 +80,36 @@ ul li {
 
 .book-button-container > :nth-child(1),
 .book-button-container > :nth-child(2) {
-  border-right: solid rgba(116, 116, 116, 0.377);
+  border-right: 1px solid rgba(116, 116, 116, 0.377);
   margin-right: 15px;
 }
 
 .book-description h3,
-.form-area h3 {
-  color: #7c7c7c;
+.form-area h3,
+.summary-header h3 {
+  color: #888;
+  font-weight: 600;
 }
 
-.book-description h3 {
-  font-size: 14px;
+.book-description h3,
+.summary-header h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .book-description h2 {
-  font-size: 22px;
+  font-size: 24px;
+}
+
+.summary-header h5 {
+  color: #121212;
+  letter-spacing: -0.4px;
+  font-size: 15px;
 }
 
 .book-description p {
   font-size: 14px;
-  color: rgb(62, 62, 245);
+  color: #4386bf;
 }
 
 .summary-header {
@@ -99,7 +117,7 @@ ul li {
 }
 
 .summary {
-  border-left: 1px solid rgba(116, 116, 116, 0.377);
+  border-left: 1px solid #e8e8e8;
   padding: 0 10px 0 75px; 
 }
 
@@ -127,16 +145,89 @@ ul li {
 .submit-area > :nth-child(1),
 .submit-area > :nth-child(2) {
   margin-right: 35px;
-  border: 1px solid rgba(116, 116, 116, 0.377);
+  border: 1px solid #e8e8e8;
   font-size: 15px;
 }
 
 .book-button {
   cursor: pointer;
-  background-color: rgb(252, 252, 252);
-  color: rgb(62, 62, 245);
+  background-color: #fff;
+  color: #4386bf;
   border: none;
   font-size: 14px;
   padding: 0 15px 0 0;
   font-weight: normal;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-item-right {
+  display: flex;
+  align-items: center;
+}
+
+.percentage {
+  font-size: 40px;
+  margin: 0 40px;
+}
+
+.progress-area {
+  display: flex;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 4.3rem;
+  height: 4.3rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 4.3rem, 4.3rem, 2.15rem);
+}
+
+.circle-wrap .inside-circle {
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #1e51dc;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.circle-wrap {
+  margin-right: 50px;
+}
+
+.mask .fill {
+  clip: rect(0px, 2.15rem, 4.3rem, 0px);
+  background-color: #227ded;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+@keyframes fill{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
 }

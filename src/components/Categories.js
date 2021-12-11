@@ -2,7 +2,7 @@ import React from 'react';
 
 function Categories() {
   return (
-    <div>
+    <div className="categories">
       <p>Under construction</p>
     </div>
   );
