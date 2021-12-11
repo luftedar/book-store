@@ -7,7 +7,7 @@ function Book({ book }) {
   return (
     <li className="book-item" key={book.item_id}>
       <div className="book-description">
-        <h3>
+        <h3 className="mont">
           { book.category}
         </h3>
         <h2>
@@ -37,7 +37,10 @@ function Book({ book }) {
               <div className="inside-circle" />
             </div>
           </div>
-          <div className="percentage">75%</div>
+          <div className="percentage">
+            <div className="completed-perc mont">75%</div>
+            <div className="completed-span mont">Completed</div>
+          </div>
         </div>
         <div className="summary">
           <div className="summary-header">

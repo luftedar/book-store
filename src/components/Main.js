@@ -35,7 +35,7 @@ function Progress() {
           />
         ))}
       </ul>
-      <div className="form-area">
+      <div className="form-area mont">
         <h3>ADD NEW BOOK</h3>
         <form className="submit-area" action="submit" onSubmit={(e) => { submitBookToStore(e); }}>
           <input type="text" placeholder="Book Title" id="b-title" />

@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&family=Roboto+Slab:wght@300;400;500;600;900&family=Source+Code+Pro:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@300;400;500;600;900&family=Source+Code+Pro:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Mochiy Pop One', sans-serif;
   font-family: 'Roboto Slab', serif;
-  font-family: 'Source Code Pro', monospace;
+}
+
+.mont {
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -15,10 +17,16 @@ body {
 
 .nav {
   background-color: #fff;
-  padding: 20px 90px;
+  padding: 20px 101px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #e8e8e8;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav h1 {
@@ -231,4 +239,13 @@ ul li {
   100% {
     transform: rotate(135deg);
   }
+}
+
+.completed-span {
+  font-size: 20px;
+  color: #888;
+}
+
+.user-icon {
+  color: #0290ff
 }
