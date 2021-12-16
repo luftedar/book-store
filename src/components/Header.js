@@ -1,5 +1,6 @@
 import React from 'react';
 import { BiUserCircle } from 'react-icons/bi';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Header() {
   return (
@@ -7,8 +8,8 @@ function Header() {
       <div className="left-nav">
         <h1>Bookstore CMS</h1>
         <div className="nav-links">
-          <a href="/">Books</a>
-          <a href="/categories">Categories</a>
+          <Link to="/">Books</Link>
+          <Link to="/categories">Categories</Link>
         </div>
       </div>
       <div>
